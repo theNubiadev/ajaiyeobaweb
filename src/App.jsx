@@ -15,12 +15,11 @@ export default function App() {
           <Route path='/' element={<Home />}  />
           <Route path="/our-story" element={<History />} />
           <Route path="/family-tree" element={<FamilyTree />} />
-          <Route path="/eulogy" element={ <Oriki />} />
+          <Route path="/eulogy" element={<Oriki />} />
+          
         </Routes>
         <Footer />
       </div>
-
     </>
   )
-
 }
