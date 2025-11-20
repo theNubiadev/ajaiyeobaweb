@@ -41,12 +41,20 @@ export default function History() {
       icon: Home,
       description: "Farinto's sons and their families sought larger farmland for growing family needs and permanent ownership. Bankole of Erunmu (father of Bello Omosalewa who married Farinto's daughter Adetoun) offered vast fertile land. The family established permanent settlement at Oloba, cultivating both arable and cash crops including cocoa and palm trees.",
       image: "https://images.pexels.com/photos/1459495/pexels-photo-1459495.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      period: "21st Century",
+      location: "World Wide",
+      title: "World Dominance",
+      icon: MapPin,
+      description: "Now the 21st century and we have now grown to be a reconable force.",
+      image: "https://"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      <section className="py-16 bg-gradient-to-r from-amber-900 to-amber-800 text-white">
+    <div className="min-h-screen bg-linear-to-b from-slate-50 to-white">
+      <section className="py-16 bg-linear-to-r from-amber-900 to-amber-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-bold mb-4">Our Historical Journey</h1>
           <p className="text-xl text-amber-100 max-w-3xl">
@@ -75,7 +83,7 @@ export default function History() {
                         alt={event.title}
                         className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
                       <div className="absolute bottom-4 left-4">
                         <div className="flex items-center space-x-2 text-white">
                           <MapPin size={20} />
@@ -87,7 +95,7 @@ export default function History() {
 
                   <div className="md:w-1/2 space-y-4">
                     <div className="flex items-center space-x-4">
-                      <div className="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center shadow-lg">
+                      <div className="w-14 h-14 bg-linear-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center shadow-lg">
                         <Icon className="text-white" size={28} />
                       </div>
                       <div>
@@ -108,7 +116,7 @@ export default function History() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-amber-50 to-rose-50">
+      <section className="py-16 bg-linear-to-br from-amber-50 to-rose-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-slate-900 mb-8 text-center">Key Historical Notes</h2>
 
@@ -172,7 +180,7 @@ export default function History() {
               { name: 'Oloba', significance: 'Permanent family farmland' },
               { name: 'Erunmu', significance: 'Connection through Bankole' }
             ].map((location) => (
-              <div key={location.name} className="p-6 bg-gradient-to-br from-amber-50 to-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
+              <div key={location.name} className="p-6 bg-linear-to-br from-amber-50 to-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
                 <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="text-white" size={24} />
                 </div>
