@@ -52,7 +52,7 @@ function Navbar() {
       {navItems.map((item) => (
         <a
           key={item.name}
-          href={item.link}
+          href={item.link} 
           className="py-2 text-white hover:text-yellow-300"
           onClick={() => setIsOpen(false)}
         >
