@@ -33,8 +33,8 @@ export default function Oriki() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      <section className="py-16 bg-gradient-to-r from-rose-900 via-rose-800 to-amber-900 text-white relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-b from-slate-50 to-white">
+      <section className="py-16 bg-linear-to-r from-rose-900 via-rose-800 to-amber-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/6069103/pexels-photo-6069103.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-4">
@@ -50,9 +50,9 @@ export default function Oriki() {
       <section className="py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <div className="bg-gradient-to-br from-amber-50 to-rose-50 rounded-xl p-8 shadow-lg">
+            <div className="bg-linear-to-br from-amber-50 to-rose-50 rounded-xl p-8 shadow-lg">
               <div className="flex items-start space-x-4 mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-rose-500 to-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-linear-to-br from-rose-500 to-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
                   <Music className="text-white" size={28} />
                 </div>
                 <div>
@@ -68,7 +68,7 @@ export default function Oriki() {
           </div>
 
           <div className="bg-white rounded-xl shadow-2xl overflow-hidden mb-12">
-            <div className="bg-gradient-to-r from-amber-600 to-rose-600 px-8 py-6">
+            <div className="bg-linear-to-r from-amber-600 to-rose-600 px-8 py-6">
               <h3 className="text-2xl font-bold text-white flex items-center space-x-3">
                 <Heart size={28} />
                 <span>ORIKI AJA(I)YEOBA</span>
@@ -80,7 +80,7 @@ export default function Oriki() {
                 {orikiLines.map((line, idx) => (
                   <div
                     key={idx}
-                    className="group hover:bg-gradient-to-r hover:from-amber-50 hover:to-rose-50 p-4 rounded-lg transition-all duration-300"
+                    className="group hover:bg-linear-to-r hover:from-amber-50 hover:to-rose-50 p-4 rounded-lg transition-all duration-300"
                   >
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="flex items-start space-x-3">
@@ -98,8 +98,8 @@ export default function Oriki() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl shadow-lg p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mb-6">
+            <div className="bg-linear-to-br from-amber-50 to-white rounded-xl shadow-lg p-8">
+              <div className="w-14 h-14 bg-linear-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mb-6">
                 <BookOpen className="text-white" size={28} />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Themes in Our Oriki</h3>
@@ -123,8 +123,8 @@ export default function Oriki() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-rose-50 to-white rounded-xl shadow-lg p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-rose-500 to-rose-600 rounded-full flex items-center justify-center mb-6">
+            <div className="bg-linear-to-br from-rose-50 to-white rounded-xl shadow-lg p-8">
+              <div className="w-14 h-14 bg-linear-to-br from-rose-500 to-rose-600 rounded-full flex items-center justify-center mb-6">
                 <Heart className="text-white" size={28} />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Living the Oriki</h3>
@@ -153,7 +153,7 @@ export default function Oriki() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-amber-900 to-rose-900 text-white rounded-xl shadow-2xl p-8 text-center">
+          <div className="bg-linear-to-r from-amber-900 to-rose-900 text-white rounded-xl shadow-2xl p-8 text-center">
             <Music className="mx-auto mb-6" size={48} />
             <h3 className="text-3xl font-bold mb-4">The Rhythm of Heritage</h3>
             <p className="text-lg text-amber-100 leading-relaxed max-w-3xl mx-auto">
@@ -165,7 +165,7 @@ export default function Oriki() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-slate-50 to-amber-50">
+      <section className="py-16 bg-linear-to-br from-slate-50 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl font-bold text-slate-900 mb-6">Preserving Our Voice</h2>
@@ -175,7 +175,7 @@ export default function Oriki() {
               of Farinto Ajaiyeoba Jejeniwa continues to inspire and guide future generations.
             </p>
             <div className="inline-block bg-white rounded-lg shadow-lg p-6">
-              <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-rose-600">
+              <p className="text-2xl font-bold text-transparent bg-clip-text bg-linear-to-r from-amber-600 to-rose-600">
                 Omo Aja(i)yeoba jeje
               </p>
               <p className="text-slate-600 mt-2">Child of the one famous and gentle</p>

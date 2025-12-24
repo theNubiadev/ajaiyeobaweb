@@ -2,16 +2,16 @@ import { Users } from 'lucide-react';
 
 export default function FamilyTree() {
   const relations = [
-    {
-      name: "Fatuase",
-      children: [
-        { name: "Adediran", children: [] }
-      ]
-    },
-    {
-      name: "Adesola (female)",
-      children: []
-    },
+    // {
+    //   name: "Fatuase",
+    //   children: [
+    //     { name: "Adediran", children: [] }
+    //   ]
+    // },
+    // {
+    //   name: "Adesola (female)",
+    //   children: []
+    // },
     {
       name: "Farinto Ajaiyeoba (male)",
       isFounder: true,
@@ -134,8 +134,8 @@ export default function FamilyTree() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      <section className="py-16 bg-gradient-to-r from-emerald-900 to-emerald-800 text-white">
+    <div className="min-h-screen bg-linear-to-b from-slate-50 to-white">
+      <section className="py-16 bg-linear-to-r from-emerald-900 to-emerald-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-4">
             <Users size={48} />
@@ -160,7 +160,7 @@ export default function FamilyTree() {
             {relations.map((person, idx) => (
               <div key={idx} className={`bg-white rounded-xl shadow-lg p-8 ${person.isFounder ? 'ring-4 ring-amber-400 lg:col-span-2' : ''}`}>
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className={`w-16 h-16 ${person.isFounder ? 'bg-gradient-to-br from-amber-500 to-amber-600' : 'bg-gradient-to-br from-emerald-500 to-emerald-600'} rounded-full flex items-center justify-center`}>
+                  <div className={`w-16 h-16 ${person.isFounder ? 'bg-linear-to-br from-amber-500 to-amber-600' : 'bg-linear-to-br from-emerald-500 to-emerald-600'} rounded-full flex items-center justify-center`}>
                     <Users className="text-white" size={32} />
                   </div>
                   <div>
@@ -182,7 +182,7 @@ export default function FamilyTree() {
                     </h4>
                     <div className="grid gap-4">
                       {person.children.map((child, childIdx) => (
-                        <div key={childIdx} className="bg-gradient-to-r from-slate-50 to-white p-4 rounded-lg border border-slate-200">
+                        <div key={childIdx} className="bg-linear-to-r from-slate-50 to-white p-4 rounded-lg border border-slate-200">
                           <p className="font-semibold text-slate-900 mb-2">
                             {typeof child === 'string' ? child : child.name}
                           </p>
@@ -212,7 +212,7 @@ export default function FamilyTree() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-amber-50 to-rose-50">
+      <section className="py-16 bg-linear-to-br from-amber-50 to-rose-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">Land Stewards at Oloba</h2>
@@ -226,7 +226,7 @@ export default function FamilyTree() {
             {landOwners.map((branch, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
                 <div className="flex items-center space-x-3 mb-4 pb-4 border-b-2 border-emerald-200">
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-linear-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center">
                     <Users className="text-white" size={24} />
                   </div>
                   <h3 className="text-xl font-bold text-slate-900">{branch.name}</h3>
@@ -251,7 +251,7 @@ export default function FamilyTree() {
             <div className="space-y-4 text-slate-700 leading-relaxed">
               <p>
                 <span className="font-semibold">No direct child is alive.</span> The current occupants are grandchildren
-                of Farinto Ajaiyeoba. Each late father's children (the grandchildren) share portions of developed land
+                of Farinto Ajaiyeoba. Each late father's children (the  grandchildren) share portions of developed land
                 on the common grandfather's property.
               </p>
               <p>

@@ -6,6 +6,9 @@ export default function Footer() {
           <h3 className="text-xl font-bold mb-2">Farinto (Ajaiyeoba Jejeniwa) Family</h3>
           <p className="text-slate-300 text-sm mb-4">
             Preserving our heritage from Esa-Oke to Ibadan, Apaso, Ore, and Oloba
+                  </p>
+                    <p className="text-slate-300 text-sm mb-4">
+                {new Date().getFullYear}
           </p>
           <div className="flex justify-center items-center space-x-2 text-slate-400 text-sm">
             <span>Legacy of</span>
@@ -14,7 +17,8 @@ export default function Footer() {
             <span className="text-amber-400 font-semibold">Honor</span>
             <span>•</span>
             <span className="text-amber-400 font-semibold">Strength</span>
-          </div>
+                  </div>
+                 
         </div>
       </div>
     </footer>
